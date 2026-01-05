@@ -81,6 +81,68 @@
         .contact:hover {
             color: #fff;
         }
+
+        .projects {
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 1px solid #2d3748;
+        }
+
+        .projects-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #94a3b8;
+        }
+
+        .project-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .project-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            text-align: left;
+        }
+
+        .project-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 0.25rem;
+        }
+
+        .project-tagline {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            color: #3b82f6;
+            background: rgba(59, 130, 246, 0.15);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+        }
     </style>
 </head>
 <body>
@@ -95,6 +157,18 @@
         </p>
 
         <a href="mailto:ben@apalos.co.uk" class="cta">Get in Touch</a>
+
+        <div class="projects">
+            <h2 class="projects-title">Our Projects</h2>
+            <a href="/sip/" class="project-card">
+                <img src="/images/sip-mascot-default-emotion.png" alt="Sip App" class="project-icon">
+                <div class="project-info">
+                    <div class="project-name">Sip: Hydration</div>
+                    <div class="project-tagline">Smart hydration tracking for iOS</div>
+                    <span class="project-badge">Coming Soon to iOS</span>
+                </div>
+            </a>
+        </div>
 
         <div class="footer">
             <p><a href="mailto:ben@apalos.co.uk" class="contact">ben@apalos.co.uk</a></p>
