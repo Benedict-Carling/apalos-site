@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apalos LTD - Software Development Services</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#1a1a2e">
     <style>
         * {
             margin: 0;
@@ -32,6 +37,15 @@
             font-weight: 700;
             margin-bottom: 0.5rem;
             letter-spacing: -1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 2.5rem;
+            height: 2.75rem;
         }
 
         .tagline {
@@ -147,7 +161,12 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="logo">Apalos</h1>
+        <h1 class="logo">
+            <svg class="logo-icon" viewBox="0 0 200 220" fill="currentColor">
+                <path d="M 100 0 L 155 78 L 122 78 L 185 220 L 132 220 L 100 148 L 68 220 L 15 220 L 78 78 L 45 78 Z"/>
+            </svg>
+            Apalos
+        </h1>
         <p class="tagline">Software Development Services</p>
 
         <p class="description">
