@@ -157,6 +157,23 @@
             padding: 0.25rem 0.75rem;
             border-radius: 999px;
         }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .project-icon-svg {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            background: rgba(59, 130, 246, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body>
@@ -179,14 +196,30 @@
 
         <div class="projects">
             <h2 class="projects-title">Our Projects</h2>
-            <a href="/sip/" class="project-card">
-                <img src="/images/sip-mascot-default-emotion.png" alt="Sip App" class="project-icon">
-                <div class="project-info">
-                    <div class="project-name">Sip: Hydration</div>
-                    <div class="project-tagline">Smart hydration tracking for iOS</div>
-                    <span class="project-badge">Available Now</span>
-                </div>
-            </a>
+            <div class="project-list">
+                <a href="/sip/" class="project-card">
+                    <img src="/images/sip-mascot-default-emotion.png" alt="Sip App" class="project-icon">
+                    <div class="project-info">
+                        <div class="project-name">Sip: Hydration</div>
+                        <div class="project-tagline">Smart hydration tracking for iOS</div>
+                        <span class="project-badge">Available Now</span>
+                    </div>
+                </a>
+                <a href="/eyerhythm/" class="project-card">
+                    <div class="project-icon-svg">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12C13 12 4 24 4 24C4 24 13 36 24 36C35 36 44 24 44 24C44 24 35 12 24 12Z" stroke="#3b82f6" stroke-width="2.5" fill="none"/>
+                            <circle cx="24" cy="24" r="7" stroke="#3b82f6" stroke-width="2.5" fill="none"/>
+                            <circle cx="24" cy="24" r="3" fill="#3b82f6"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">EyeRhythm</div>
+                        <div class="project-tagline">Intelligent eye wellness monitoring</div>
+                        <span class="project-badge">Available Now</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <div class="footer">
