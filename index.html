@@ -3,12 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apalos LTD - Software Development Services</title>
+    <title>Apalos LTD | Software for startups, research and health</title>
+    <meta name="description" content="Apalos designs and builds dependable software for startups, research teams and mission-led organisations across health, accessibility, engineering biology and consumer technology.">
+    <meta name="author" content="Apalos LTD">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://apalos.co.uk/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Apalos">
+    <meta property="og:title" content="Apalos | Software built for ambitious ideas">
+    <meta property="og:description" content="Digital products and websites for startups, research teams and mission-led organisations.">
+    <meta property="og:url" content="https://apalos.co.uk/">
+    <meta property="og:image" content="https://apalos.co.uk/images/og-apalos.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Apalos — Software built for ambitious ideas">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Apalos | Software built for ambitious ideas">
+    <meta name="twitter:description" content="Digital products and websites for startups, research teams and mission-led organisations.">
+    <meta name="twitter:image" content="https://apalos.co.uk/images/og-apalos.png">
+    <meta name="twitter:image:alt" content="Apalos — Software built for ambitious ideas">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#1a1a2e">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://apalos.co.uk/#organization",
+                "name": "Apalos",
+                "legalName": "Apalos LTD",
+                "url": "https://apalos.co.uk/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://apalos.co.uk/images/logo-dark-200.png"
+                },
+                "email": "mailto:ben@apalos.co.uk",
+                "foundingDate": "2021-09-27",
+                "identifier": "UK company number 13644974",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "London",
+                    "addressCountry": "GB"
+                },
+                "founder": {
+                    "@id": "https://apalos.co.uk/#founder"
+                },
+                "sameAs": [
+                    "https://find-and-update.company-information.service.gov.uk/company/13644974",
+                    "https://apps.apple.com/us/developer/apalos-ltd/id1864995617"
+                ]
+            },
+            {
+                "@type": "Person",
+                "@id": "https://apalos.co.uk/#founder",
+                "name": "Benedict Carling",
+                "jobTitle": "Founder and Software Developer",
+                "worksFor": {
+                    "@id": "https://apalos.co.uk/#organization"
+                },
+                "sameAs": [
+                    "https://uk.linkedin.com/in/benedict-carling",
+                    "https://github.com/Benedict-Carling"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://apalos.co.uk/#website",
+                "url": "https://apalos.co.uk/",
+                "name": "Apalos",
+                "publisher": {
+                    "@id": "https://apalos.co.uk/#organization"
+                }
+            }
+        ]
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -96,6 +169,19 @@
 
         .contact:hover {
             color: #fff;
+        }
+
+        .profile-links {
+            margin-top: 0.75rem;
+        }
+
+        .profile-links a {
+            color: #64748b;
+            text-decoration: none;
+        }
+
+        .profile-links a:hover {
+            color: #cbd5e1;
         }
 
         .projects {
@@ -243,12 +329,13 @@
             </svg>
             Apalos
         </h1>
-        <p class="tagline">Software Development Services</p>
+        <p class="tagline">Software for startups, research and health</p>
 
         <p class="description">
-            We build high-quality software solutions tailored to your needs.
-            From web applications to desktop software, we deliver clean,
-            maintainable code that scales with your business.
+            Apalos designs and builds dependable digital products for startups,
+            research teams and mission-led organisations. Our work spans consumer
+            apps, health and accessibility software, engineering biology platforms
+            and polished websites—from early prototype through launch and improvement.
         </p>
 
         <a href="mailto:ben@apalos.co.uk" class="cta">Get in Touch</a>
@@ -288,31 +375,35 @@
                         <span class="project-badge">Live</span>
                     </div>
                 </a>
-                <a href="https://turbopop-website.vercel.app" class="project-card" target="_blank" rel="noopener">
+                <a href="/turbopop/" class="project-card">
                     <img src="/images/turbopop-logo.svg" alt="TurboPop" class="project-icon">
                     <div class="project-info">
                         <div class="project-name">TurboPop</div>
                         <div class="project-tagline">Fresh snacks, made where and when people want them</div>
-                        <span class="project-badge dev">In Development</span>
+                        <span class="project-badge dev">In Development · Case Study</span>
                     </div>
-                    <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
                 </a>
-                <a href="https://ukbiofoundries.org" class="project-card" target="_blank" rel="noopener">
+                <a href="/uk-biofoundries/" class="project-card">
                     <img src="/images/uk-biofoundries-logo.svg" alt="UK Biofoundries Network" class="project-icon">
                     <div class="project-info">
                         <div class="project-name">UK Biofoundries Network</div>
                         <div class="project-tagline">Network of automated biology facilities across the United Kingdom</div>
-                        <span class="project-badge">Live</span>
+                        <span class="project-badge">Live · Case Study</span>
                     </div>
-                    <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
                 </a>
             </div>
         </div>
 
         <div class="footer">
             <p><a href="mailto:ben@apalos.co.uk" class="contact">ben@apalos.co.uk</a></p>
-            <p>Apalos LTD</p>
+            <p>Apalos LTD · London, United Kingdom</p>
             <p>Company No. 13644974</p>
+            <p>Founded by <a href="https://uk.linkedin.com/in/benedict-carling" class="contact" rel="me">Benedict Carling</a></p>
+            <p class="profile-links">
+                <a href="https://github.com/Benedict-Carling" rel="me">GitHub</a> ·
+                <a href="https://apps.apple.com/us/developer/apalos-ltd/id1864995617">App Store</a> ·
+                <a href="https://find-and-update.company-information.service.gov.uk/company/13644974">Companies House</a>
+            </p>
         </div>
     </div>
 </body>
