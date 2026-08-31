@@ -27,7 +27,8 @@
         }
 
         .container {
-            max-width: 600px;
+            width: 100%;
+            max-width: 800px;
             padding: 3rem 2rem;
             text-align: center;
         }
@@ -55,10 +56,11 @@
         }
 
         .description {
+            max-width: 600px;
+            margin: 0 auto 3rem;
             font-size: 1.1rem;
             line-height: 1.8;
             color: #cbd5e1;
-            margin-bottom: 3rem;
         }
 
         .cta {
@@ -109,13 +111,20 @@
             color: #94a3b8;
         }
 
+        .project-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
         .project-card {
+            position: relative;
             display: flex;
             align-items: center;
-            gap: 1.5rem;
+            gap: 1.25rem;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 12px;
-            padding: 1.5rem;
+            padding: 1.25rem;
             text-decoration: none;
             transition: background 0.2s ease, transform 0.2s ease;
         }
@@ -126,26 +135,39 @@
         }
 
         .project-icon {
-            width: 80px;
-            height: 80px;
+            flex-shrink: 0;
+            width: 72px;
+            height: 72px;
             border-radius: 16px;
             object-fit: cover;
         }
 
+        .project-icon.contain {
+            object-fit: contain;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .project-icon.light {
+            background: #fff;
+        }
+
         .project-info {
             text-align: left;
+            min-width: 0;
         }
 
         .project-name {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             font-weight: 600;
             color: #fff;
             margin-bottom: 0.25rem;
         }
 
         .project-tagline {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: #94a3b8;
+            line-height: 1.4;
             margin-bottom: 0.5rem;
         }
 
@@ -158,10 +180,58 @@
             border-radius: 999px;
         }
 
-        .project-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
+        .project-badge.dev {
+            color: #f59e0b;
+            background: rgba(245, 158, 11, 0.15);
+        }
+
+        .external-icon {
+            position: absolute;
+            top: 0.85rem;
+            right: 0.85rem;
+            width: 14px;
+            height: 14px;
+            color: #64748b;
+            transition: color 0.2s ease;
+        }
+
+        .project-card:hover .external-icon {
+            color: #fff;
+        }
+
+        .project-card[target="_blank"] .project-info {
+            padding-right: 1.25rem;
+        }
+
+        @media (min-width: 720px) {
+            .project-list {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 2.5rem 1.25rem;
+            }
+
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            .project-card {
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .project-icon {
+                width: 56px;
+                height: 56px;
+                border-radius: 12px;
+            }
+
+            .project-icon.contain {
+                padding: 8px;
+            }
         }
     </style>
 </head>
@@ -195,7 +265,7 @@
                     </div>
                 </a>
                 <a href="/eyerhythm/" class="project-card">
-                    <img src="/images/eyerhythm-logo.png" alt="EyeRhythm" class="project-icon" style="background: rgba(255, 255, 255, 0.05); object-fit: contain; padding: 12px;">
+                    <img src="/images/eyerhythm-logo.png" alt="EyeRhythm" class="project-icon contain">
                     <div class="project-info">
                         <div class="project-name">EyeRhythm</div>
                         <div class="project-tagline">Intelligent eye wellness monitoring</div>
@@ -217,6 +287,24 @@
                         <div class="project-tagline">Engineering Biology Korea UK collaboration platform</div>
                         <span class="project-badge">Live</span>
                     </div>
+                </a>
+                <a href="https://turbopop-website.vercel.app" class="project-card" target="_blank" rel="noopener">
+                    <img src="/images/turbopop-logo.svg" alt="TurboPop" class="project-icon">
+                    <div class="project-info">
+                        <div class="project-name">TurboPop</div>
+                        <div class="project-tagline">Fresh snacks, made where and when people want them</div>
+                        <span class="project-badge dev">In Development</span>
+                    </div>
+                    <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+                <a href="https://ukbiofoundries.org" class="project-card" target="_blank" rel="noopener">
+                    <img src="/images/uk-biofoundries-logo.svg" alt="UK Biofoundries Network" class="project-icon">
+                    <div class="project-info">
+                        <div class="project-name">UK Biofoundries Network</div>
+                        <div class="project-tagline">Network of automated biology facilities across the United Kingdom</div>
+                        <span class="project-badge">Live</span>
+                    </div>
+                    <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
                 </a>
             </div>
         </div>
